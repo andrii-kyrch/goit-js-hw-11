@@ -2,21 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Image Search App</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
-
-    <load src="./partials/footer.html" />
+    <div class="container">
+      <form class="search-form">
+        <input
+          class="search-form-field"
+          name="query"
+          placeholder="Search images..."
+        />
+        <button class="search-form-btn" type="submit">Search</button>
+      </form>
+      <p class="loader visually-hidden">Loading images, please wait...</p>
+      <ul class="gallery">
+        <li class="gallery-item">
+          <a href="#" class="gallery-link">
+            <img class="gallery-img" src="" alt="Image found" />
+          </a>
+          <ul class="img-stats">
+            <li class="stat-item">
+              <span class="stat-label">Likes</span>
+              <span class="stat-value" data-likes>0</span>
+            </li>
+            <li class="stat-item">
+              <span class="stat-label">Views</span>
+              <span class="stat-value" data-views>0</span>
+            </li>
+            <li class="stat-item">
+              <span class="stat-label">Comments</span>
+              <span class="stat-value" data-comments>0</span>
+            </li>
+            <li class="stat-item">
+              <span class="stat-label">Downloads</span>
+              <span class="stat-value" data-downloads>0</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
     <script type="module" src="./main.js"></script>
   </body>
