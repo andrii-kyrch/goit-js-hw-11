@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Search App</title>
+    <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-BM1uJsn8.css">
+  </head>
+  <body>
+    <div class="container">
+      <form class="search-form">
+        <input
+          class="search-form-field"
+          name="query"
+          placeholder="Search images..."
+        />
+        <button class="search-form-btn" type="submit">Search</button>
+      </form>
+      <p class="loader visually-hidden">Loading images, please wait...</p>
+      <ul class="gallery">
+        <li class="gallery-item">
+          <a href="#" class="gallery-link">
+            <img class="gallery-img" src="" alt="Image found" />
+          </a>
+          <ul class="img-stats">
+            <li class="stat-item">
+              <span class="stat-label">Likes</span>
+              <span class="stat-value" data-likes>0</span>
+            </li>
+            <li class="stat-item">
+              <span class="stat-label">Views</span>
+              <span class="stat-value" data-views>0</span>
+            </li>
+            <li class="stat-item">
+              <span class="stat-label">Comments</span>
+              <span class="stat-value" data-comments>0</span>
+            </li>
+            <li class="stat-item">
+              <span class="stat-label">Downloads</span>
+              <span class="stat-value" data-downloads>0</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </body>
+</html>
