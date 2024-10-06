@@ -48,7 +48,8 @@ function onSearchFormSubmit(event) {
     })
     .catch(error => {
       iziToast.error({
-        message: error,
+        message: 'Something went wrong. Please try again later.',
+        maxWidth: 350,
         closeOnEscape: true,
         closeOnClick: true,
         position: 'topRight',
