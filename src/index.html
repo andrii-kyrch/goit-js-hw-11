@@ -10,38 +10,16 @@
     <div class="container">
       <form class="search-form">
         <input
+          type="text"
           class="search-form-field"
           name="query"
           placeholder="Search images..."
+          required
         />
         <button class="search-form-btn" type="submit">Search</button>
       </form>
-      <p class="loader visually-hidden">Loading images, please wait...</p>
-      <ul class="gallery">
-        <li class="gallery-item">
-          <a href="#" class="gallery-link">
-            <img class="gallery-img" src="" alt="Image found" />
-          </a>
-          <ul class="img-stats">
-            <li class="stat-item">
-              <span class="stat-label">Likes</span>
-              <span class="stat-value" data-likes>0</span>
-            </li>
-            <li class="stat-item">
-              <span class="stat-label">Views</span>
-              <span class="stat-value" data-views>0</span>
-            </li>
-            <li class="stat-item">
-              <span class="stat-label">Comments</span>
-              <span class="stat-value" data-comments>0</span>
-            </li>
-            <li class="stat-item">
-              <span class="stat-label">Downloads</span>
-              <span class="stat-value" data-downloads>0</span>
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <span class="loader visually-hidden"></span>
+      <ul class="gallery"></ul>
     </div>
 
     <script type="module" src="./main.js"></script>
